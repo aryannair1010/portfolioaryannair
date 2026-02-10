@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aryan S Nair | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Aryan</h2>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#dbms">DBMS</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-text">
+        <h1>Aryan S Nair</h1>
+        <h3>Backend & Frontend Student</h3>
+        <p>1st Year BCA | Kristu Jayanti College</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a backend and frontend student interested in building modern web
+        applications and learning database-driven systems.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Java</div>
+        <div class="card">Python</div>
+        <div class="card">SQL</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Library Management System</h3>
+        <p>System designed to manage book records and student data efficiently.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Attendance Tracker</h3>
+        <p>Application used to monitor attendance and calculate percentages.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Student Result Analyzer</h3>
+        <p>Tool to analyze academic performance and generate insights.</p>
+    </div>
+</section>
+
+<!-- DBMS -->
+<section id="dbms">
+    <h2>Student Record Management</h2>
+
+    <div class="dbms-box">
+
+        <p>Total Records: <span id="totalRecords">0</span></p>
+
+        <form id="studentForm" class="dbms-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email ID" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="course" placeholder="Course" required>
+            <input type="number" id="marks" placeholder="Marks (0-100)" required>
+            <button class="btn">Save Record</button>
+        </form>
+
+        <div id="recordArea" class="record-area">
+            No student records added yet.
+        </div>
+
+        <button id="clearBtn" class="clear-btn">Clear Database</button>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: 25bcae11@kristujayanti.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Aryan S Nair</p>
+</footer>
+
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyC9Zw4MhPbUYQoITpMEnqRdV7x9_Z-pT2Q",
+  authDomain: "portfolio-4b378.firebaseapp.com",
+  databaseURL: "https://portfolio-4b378-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "portfolio-4b378",
+  storageBucket: "portfolio-4b378.firebasestorage.app",
+  messagingSenderId: "1015713596725",
+  appId: "1:1015713596725:web:b5443381acdf971f47f87c"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
