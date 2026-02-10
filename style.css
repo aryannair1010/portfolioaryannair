@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0b0b0b;
+    color: white;
+}
+
+/* NAVBAR */
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(8px);
+    padding: 15px 60px;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* HERO */
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at top, #1a0000, #000);
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+}
+
+.hero-text h3 {
+    color: #ff3b3b;
+    margin-top: 10px;
+}
+
+.hero-text p {
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #cc0000;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 100px 80px;
+}
+
+h2 {
+    margin-bottom: 25px;
+    border-left: 4px solid red;
+    padding-left: 10px;
+}
+
+/* SKILLS */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #141414;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #1f1f1f;
+}
+
+/* PROJECTS */
+
+.project-card {
+    background: #141414;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* CONTACT */
+
+#contact p {
+    margin-top: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+/* DBMS SECTION */
+
+.dbms-box {
+    background: #141414;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.dbms-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.dbms-form input {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background: #1f1f1f;
+    color: white;
+}
+
+.dbms-form button {
+    grid-column: span 2;
+}
+
+.record-area {
+    background: #1f1f1f;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+.clear-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
